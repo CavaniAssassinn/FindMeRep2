@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="FindMe.Views.CreateAccountPage"
+             BackgroundColor="#303030">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="0">
+                        <Entry Placeholder="Username" FontSize="16" x:Name="EntryUserName" PlaceholderColor="WhiteSmoke" TextColor="WhiteSmoke"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1">
+                        <Entry Placeholder="Password" IsPassword="True" FontSize="16" x:Name="EntryUserPassword" PlaceholderColor="WhiteSmoke" TextColor="WhiteSmoke"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2">
+                        <Entry Placeholder="Email" FontSize="16" x:Name="EntryUserEmail" PlaceholderColor="WhiteSmoke" TextColor="WhiteSmoke"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3">
+                        <Entry Placeholder="Phone Number" FontSize="16" x:Name="EntryUserPhoneNumber" PlaceholderColor="WhiteSmoke" TextColor="WhiteSmoke"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="4">
+                        <Button Text="Register" HorizontalOptions="CenterAndExpand" WidthRequest="100" Clicked="Button_Clicked" Command="{Binding LoginCommand}"/>
+                    </StackLayout>
+                    
+                </Grid>
+                <!--<ListView x:Name="listView">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Username}"
+                                      Detail="{Binding Email}"
+                                      />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>-->
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

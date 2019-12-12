@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="FindMe.Views.AddImage">
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem Text="Post" Order="Primary"    />
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+            <Button Text="Pick Photo" Command="{Binding AddImageCommand}"/>
+        <Image HeightRequest="300" WidthRequest="300" Source="{Binding PickImage,Path= Stream }"/>
+        
+        <!-- <Button Text="Take Photo" Command="{Binding TakePhotoCommand}"/>
+        <Image HeightRequest="300" WidthRequest="300" Source="{Binding CameraImage,Path= Stream}"/>
+       --> 
+        
+    </StackLayout>
+    </ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="FindMe.Views.LoginPage"
+             BackgroundColor="#303030"
+             >
+
+    <ContentPage.ToolbarItems>
+        
+        <ToolbarItem Text="About Us" Order="Primary" Clicked="ToolbarItem_Clicked"  />
+    </ContentPage.ToolbarItems>
+    
+    <StackLayout>
+
+        <StackLayout VerticalOptions="EndAndExpand" BackgroundColor="#171717"
+            Orientation="Horizontal">
+            <Frame CornerRadius="40" HorizontalOptions="Start">
+                <ImageButton Source="out" HorizontalOptions="Start" HeightRequest="30" Clicked="ImageButton_Clicked"/>
+            </Frame>
+
+            <Frame CornerRadius="40" >
+                <ImageButton HorizontalOptions="Center" Source="plus"  HeightRequest="30" Command="{Binding ImageCommand}"/>
+                </Frame>
+
+                <Frame CornerRadius="40" >
+                <ImageButton Source="user1" HorizontalOptions="End"  HeightRequest="30" />
+            </Frame>
+        </StackLayout>
+    </StackLayout>
+    <!--<Grid>
+        <ScrollView>
+            <StackLayout>
+                <Label Text=" boom"/>
+            </StackLayout>
+        </ScrollView>
+
+        <Button HeightRequest="0"/>
+    </Grid>-->
+</ContentPage>

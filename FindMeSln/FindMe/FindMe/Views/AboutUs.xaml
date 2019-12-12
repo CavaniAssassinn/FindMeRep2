@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="FindMe.Views.AboutUs"
+             BackgroundColor="#303030">
+    <StackLayout>
+        <Label TextColor="WhiteSmoke" Text="Our Mission" FontSize="Header" FontAttributes="Italic"/>
+
+        <Label/>
+
+        <Label TextColor="AliceBlue" Text="Our mission and goal is to try to reduce the amount of missing people there is in our community"/>
+
+    <Label TextColor="AliceBlue" Text="There has been too many reports of missing people in recent times and it is a great concern to us the amount of people its been and how close we are to the people"/>
+
+    <Label TextColor="AliceBlue" Text="We hope to address this issue with this app that will help people find their loved ones"/>
+    </StackLayout>
+</ContentPage>

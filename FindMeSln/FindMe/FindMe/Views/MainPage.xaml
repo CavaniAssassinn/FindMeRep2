@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FindMe.Views.MainPage"
+             Title="{Binding Title}"
+             BackgroundColor="#303030"
+             >
+
+    <ScrollView>
+        <StackLayout>
+            <Image Source="user4" HeightRequest="400"/>
+            <Grid VerticalOptions="CenterAndExpand">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Entry Placeholder="Username" x:Name="EntryUser" Grid.Row="0" PlaceholderColor="WhiteSmoke" TextColor="WhiteSmoke"/>
+                <Entry Placeholder="Password" x:Name="EntryPassword" Grid.Row="1" IsPassword="True" PlaceholderColor="WhiteSmoke" TextColor="WhiteSmoke"/>
+                <Button Text="Login" Command="{Binding LoginCommand}" Grid.Row="2" Clicked="Button_Clicked_1"/>
+                <Button Text="SignUp" Command="{Binding SignUpCommand}" Grid.Row="3"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+    
+    
+    <!--<ScrollView>
+        <StackLayout VerticalOptions="End">
+            <Image Source="user4"/>
+            <Entry Placeholder ="Username" TextColor="WhiteSmoke" PlaceholderColor="WhiteSmoke"/>
+            <Entry Placeholder="Password" TextColor="WhiteSmoke" PlaceholderColor="WhiteSmoke"/>
+            <Button Text="Login" Command="{Binding LoginCommand}" CornerRadius="20" />
+            <Button Text="CREATE ACCOUNT" Command="{Binding SignUpCommand}" CornerRadius="20"  />
+        </StackLayout> 
+    </ScrollView>-->
+</ContentPage>
