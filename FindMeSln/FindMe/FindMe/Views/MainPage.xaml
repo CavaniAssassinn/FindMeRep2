@@ -17,9 +17,9 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Entry Placeholder="Username" x:Name="EntryUser" Grid.Row="0" PlaceholderColor="WhiteSmoke" TextColor="WhiteSmoke"/>
-                <Entry Placeholder="Password" x:Name="EntryPassword" Grid.Row="1" IsPassword="True" PlaceholderColor="WhiteSmoke" TextColor="WhiteSmoke"/>
-                <Button Text="Login" Command="{Binding LoginCommand}" Grid.Row="2" Clicked="Button_Clicked_1"/>
+                <Entry Grid.Row="0" Text="{Binding User.Username}" Placeholder="Username" PlaceholderColor="WhiteSmoke" FontSize="16"/>
+                <Entry Grid.Row="1" Text="{Binding User.Password}" IsPassword="True" Placeholder="Password" PlaceholderColor="WhiteSmoke" FontSize="16" MaxLength="8"/>
+                <Button Text="Login" Command="{Binding LoginCommand}" Grid.Row="2" />
                 <Button Text="SignUp" Command="{Binding SignUpCommand}" Grid.Row="3"/>
             </Grid>
         </StackLayout>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Xamarin\\FindMeRep\\FindMeSln\\FindMe\\FindMe\\FindMe.csproj": {}
+    "C:\\Xamarin\\FindMeRep2\\FindMeSln\\FindMe\\FindMe\\FindMe.csproj": {}
   },
   "projects": {
-    "C:\\Xamarin\\FindMeRep\\FindMeSln\\FindMe\\FindMe\\FindMe.csproj": {
+    "C:\\Xamarin\\FindMeRep2\\FindMeSln\\FindMe\\FindMe\\FindMe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Xamarin\\FindMeRep\\FindMeSln\\FindMe\\FindMe\\FindMe.csproj",
+        "projectUniqueName": "C:\\Xamarin\\FindMeRep2\\FindMeSln\\FindMe\\FindMe\\FindMe.csproj",
         "projectName": "FindMe",
-        "projectPath": "C:\\Xamarin\\FindMeRep\\FindMeSln\\FindMe\\FindMe\\FindMe.csproj",
+        "projectPath": "C:\\Xamarin\\FindMeRep2\\FindMeSln\\FindMe\\FindMe\\FindMe.csproj",
         "packagesPath": "C:\\Users\\Nathan.Antha\\.nuget\\packages\\",
-        "outputPath": "C:\\Xamarin\\FindMeRep\\FindMeSln\\FindMe\\FindMe\\obj\\",
+        "outputPath": "C:\\Xamarin\\FindMeRep2\\FindMeSln\\FindMe\\FindMe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,6 +43,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[8.6.0, )"
+            },
             "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
               "version": "[3.1.0, )"
@@ -56,6 +60,10 @@
             "Prism.Unity.Forms": {
               "target": "Package",
               "version": "[7.2.0.1422, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

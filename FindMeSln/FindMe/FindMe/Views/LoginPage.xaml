@@ -13,7 +13,16 @@
     </ContentPage.ToolbarItems>
     
     <StackLayout>
-
+        <StackLayout>
+            <Frame CornerRadius="20">
+                <StackLayout>
+                    <Image Source="pop"/>
+                    <Label Text="Missing person. name is Nelson Mandela and was last seen in Elsies River close to the rio"></Label>
+                    <Entry Placeholder="Add update"/>
+                </StackLayout>
+            </Frame>
+            
+        </StackLayout>
         <StackLayout VerticalOptions="EndAndExpand" BackgroundColor="#171717"
             Orientation="Horizontal">
             <Frame CornerRadius="40" HorizontalOptions="Start">
@@ -25,7 +34,7 @@
                 </Frame>
 
                 <Frame CornerRadius="40" >
-                <ImageButton Source="user1" HorizontalOptions="End"  HeightRequest="30" />
+                <ImageButton Source="user1" HorizontalOptions="End"  HeightRequest="30" Command="{Binding ProfileCommand}"/>
             </Frame>
         </StackLayout>
     </StackLayout>

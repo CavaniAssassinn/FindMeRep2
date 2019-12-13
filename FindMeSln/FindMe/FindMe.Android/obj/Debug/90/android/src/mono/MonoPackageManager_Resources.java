@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "FindMe.Android.dll" comes first in this list. */
 		"FindMe.Android.dll",
 		"FindMe.dll",
+		"FluentValidation.dll",
 		"FormsViewGroup.dll",
 		"Microsoft.Data.Sqlite.dll",
 		"Plugin.CurrentActivity.dll",

@@ -8506,19 +8506,25 @@ namespace FindMe.Droid
 			public const int plus = 2131165499;
 			
 			// aapt resource value: 0x7F07013C
-			public const int tooltip_frame_dark = 2131165500;
+			public const int pop = 2131165500;
 			
 			// aapt resource value: 0x7F07013D
-			public const int tooltip_frame_light = 2131165501;
+			public const int pop1 = 2131165501;
 			
 			// aapt resource value: 0x7F07013E
-			public const int user1 = 2131165502;
+			public const int tooltip_frame_dark = 2131165502;
 			
 			// aapt resource value: 0x7F07013F
-			public const int user4 = 2131165503;
+			public const int tooltip_frame_light = 2131165503;
 			
 			// aapt resource value: 0x7F070140
-			public const int user41 = 2131165504;
+			public const int user1 = 2131165504;
+			
+			// aapt resource value: 0x7F070141
+			public const int user4 = 2131165505;
+			
+			// aapt resource value: 0x7F070142
+			public const int user41 = 2131165506;
 			
 			static Drawable()
 			{
